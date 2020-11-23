@@ -23,6 +23,8 @@
 --6
 --SELECT Album.Title
 --FROM Album
+--LEFT JOIN Song ON Song.AlbumId = Album.Id
+--WHERE Song.Id IS NULL;
 
 --7
 --INSERT INTO Artist (ArtistName, YearEstablished) VALUES ('Eminem', 1996)
@@ -51,9 +53,9 @@
 --WHERE Album.ArtistId = 29
 
 --11 NOT COMPLETE
-SELECT DISTINCT Album.Title AS AlbumTitle, Song.Title AS SongTitle
-FROM Song
-LEFT JOIN Album ON Song.AlbumId = Album.Id
+--SELECT DISTINCT Album.Title AS AlbumTitle, Song.Title AS SongTitle
+--FROM Song
+--LEFT JOIN Album ON Song.AlbumId = Album.Id
 
 
 
