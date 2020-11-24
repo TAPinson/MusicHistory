@@ -52,11 +52,8 @@
 --INNER JOIN Artist ON Album.ArtistId = Artist.Id
 --WHERE Album.ArtistId = 29
 
---11 NOT COMPLETE
---SELECT DISTINCT Album.Title AS AlbumTitle, Song.Title AS SongTitle
+--11
+--SELECT Song.AlbumId, count(*) AS SongsOnAlbum
 --FROM Song
---LEFT JOIN Album ON Song.AlbumId = Album.Id
-
-
-
+--GROUP BY Song.AlbumId
 
