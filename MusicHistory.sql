@@ -57,3 +57,7 @@
 --FROM Song
 --GROUP BY Song.AlbumId
 
+--12
+--SELECT Song.ArtistId, count(*) AS SongsByArtist
+--FROM Song
+--GROUP BY Song.ArtistId
