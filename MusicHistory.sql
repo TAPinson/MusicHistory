@@ -63,6 +63,31 @@
 --GROUP BY Song.ArtistId
 
 --13
---SELECT Song.GenreId, count(*) AS SongsInGenre
+--SELECT Song.GenreId, count(*) AS SongsInGenre, Genre.Label
 --FROM Song
---GROUP BY Song.GenreId
+--INNER JOIN Genre ON Genre.Id = Song.GenreId
+--GROUP BY Song.GenreId, Genre.Label
+
+--14
+--SELECT COUNT(DISTINCT Album.Label), Artist.ArtistName
+--FROM Album
+--JOIN Artist ON Album.ArtistId = Artist.Id
+--GROUP BY Artist.ArtistName
+--HAVING COUNT(DISTINCT Album.Label) > 1
+
+--15
+--SELECT TOP 1 Album.AlbumLength, Album.Title
+--FROM Album
+--ORDER BY Album.AlbumLength Desc
+
+--16
+--SELECT SongLength, Title
+--FROM Song
+--WHERE SongLength = (
+--	SELECT MAX(SongLength)
+--	FROM Song);
+
+--16, But Different
+--SELECT TOP 1 SongLength, Title
+--FROM Song
+--ORDER BY SongLength Desc
