@@ -61,3 +61,8 @@
 --SELECT Song.ArtistId, count(*) AS SongsByArtist
 --FROM Song
 --GROUP BY Song.ArtistId
+
+--13
+--SELECT Song.GenreId, count(*) AS SongsInGenre
+--FROM Song
+--GROUP BY Song.GenreId
